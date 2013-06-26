@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Cool Page</title>
+    <link rel="stylesheet" type="text/css" href="css/reset.min.css">
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+  </head>
+  <body>
+
+    <h1>Famous Cartoon Dogs</h1>
+    <ul id="puppies">
+      <li id="scooby-doo" class="great-dane">Scooby Doo<img src="images/scooby_doo.jpg" alt="scooby-doo"></li>
+      <li id="toto" class="cairn-terrier">Toto<img src="images/toto.jpg" alt="Toto"></li>
+      <li id="old-yeller" class="lab">Old Yeller<img src="images/old_yeller.jpg" alt="old-yeller"></li>
+      <li id="lady" class="cocker-spaniel">Lady<img src="images/lady.jpg" alt="lady"></li>
+      <li id="ren" class="chihuahua">Ren<img src="images/ren.jpg" alt="ren"></li>
+      <li id="lassie" class="collie">Lassie<img src="images/lassie.jpg" alt="lassie"></li>
+      <li id="marmaduke" class="great-dane">Marmaduke<img src="images/marmaduke.jpg" alt="marmaduke"></li>
+      <li id="snoopy" class="beagle">Snoopy<img src="images/snoopy.jpg" alt="snoopy"></li>
+    </ul>
+    <form id="new_puppy" action="/puppies" method="post">
+      <fieldset>
+        <legend>Add a dog</legend>
+        <label for="name">Name</label>
+          <input type="text" id="name" name="name">
+        <label for="breed">Breed</label>
+          <select id="breed" name="breed">
+            <option value="">Choose a breed.</option>
+            <option value="great-dane">Great Dane</option>
+            <option value="cairn-terrier">Cairn Terrier</option>
+            <option value="lab">Lab</option>
+            <option value="cocker-spaniel">Cocker Spaniel</option>
+            <option value="chihuahua">Chihuahua</option>
+            <option value="collie">Collie</option>
+            <option value="beagle">Beagle</option>
+          </select>
+          <input type="submit" name="submit" value="Add dog!">
+      </fieldset>
+    </form>
+  <script src="http://ajax.googleapis.com/ajax/libs/jquery/2.0.0/jquery.min.js"></script>
+  <script src="js/script.js"></script>
+  </body>
+</html>
+
+
